@@ -1,0 +1,6 @@
+{
+    "name": "minexcoin",
+    "symbol": "mnx",
+    "algorithm": "equihash",
+    "txfee": 0.00001
+}
