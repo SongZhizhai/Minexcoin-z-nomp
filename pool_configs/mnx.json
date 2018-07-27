@@ -1,82 +1,87 @@
 {
-    "enabled": false,
-    "coin": "zen_testnet.json",
-
-    "address": "ztXoXdBdoQ4WDxp9mtHNRoqZ9N5pCH2JNWe",
+    "enabled": true,
+    "coin": "mnx.json",
+    
+    "address": "XEJKTFxenmsVgssEKifKJk7MmFoC7fvWSy",
     "_comment_address": "a transparent address to send coinbase rewards to and to transfer to zAddress.",
-
-    "zAddress": "ztZLon4AswWDcftwdN5Q94ADoZWPcCBBBHaHE84VVDd2bG9o8f6xuMFJgGMdYb35rwLi9LyGLCH3VoDBHKddrNnmEKg5N8c",
-    "_comment_zAddress": "a private address used to send coins to tAddress.",
-
-    "tAddress": "ztj7WuC4ASGVw4r2mCUqgHhyQxzWpxYLbNg",
+    
+    "zAddress": "XEJKTFxenmsVgssEKifKJk7MmFoC7fvWSy",
+    "_comment_zAddress": "Not used",
+    
+    "tAddress": "XEJKTFxenmsVgssEKifKJk7MmFoC7fvWSy",
     "_comment_tAddress": "transparent address used to send payments, make this a different address, otherwise payments will not send",
+    
+    "invalidAddress":"XEJKTFxenmsVgssEKifKJk7MmFoC7fvWSy",
+    "_comment_invalidAddress": "Invalid addresses will be converted to the above",
 
     "walletInterval": 2.5,
-
+    
     "rewardRecipients": {
+        "XVtzX9m3DAc5m8ZZEJbfgd3Dx81hXU9Dub": 1.0
     },
-
+    
     "tlsOptions": {
         "enabled": false,
         "serverKey":"",
         "serverCert":"",
         "ca":""
     },
-
+    
     "paymentProcessing": {
-        "enabled": false,
+        "enabled": true,
+	    "minConf": 3,
         "paymentMode": "prop",
         "_comment_paymentMode":"prop, pplnt",
-        "paymentInterval": 20,
+        "paymentInterval": 180,
         "minimumPayment": 0.1,
         "maxBlocksPerPayment": 3,
         "daemon": {
             "host": "127.0.0.1",
-            "port": 8232,
-            "user": "testuser",
-            "password": "testpass"
+            "port": 2300,
+            "user": "yourname",
+            "password": "yourpassword"
         }
     },
-
+    
     "ports": {
         "3032": {
             "tls":false,
-            "diff": 2.5,
+            "diff": 4,
             "varDiff": {
-                "minDiff": 0.04,
-                "maxDiff": 16,
+                "minDiff": 1,
+                "maxDiff": 36,
                 "targetTime": 15,
                 "retargetTime": 60,
                 "variancePercent": 30
             }
         }
     },
-
+    
     "daemons": [
-        {
-            "host": "127.0.0.1",
-            "port": 18231,
-            "user": "rpcuser",
-            "password": "rpcpassword"
-        }
-    ],
-
+                {
+                "host": "127.0.0.1",
+                "port": 2300,
+                "user": "yourname",
+                "password": "yourpassword"
+                }
+                ],
+    
     "p2p": {
         "enabled": false,
         "host": "127.0.0.1",
         "port": 19333,
         "disableTransactions": true
     },
-
+    
     "mposMode": {
         "enabled": false,
         "host": "127.0.0.1",
         "port": 3306,
         "user": "me",
         "password": "mypass",
-        "database": "zcl",
+        "database": "kmd",
         "checkPassword": true,
         "autoCreateWorker": false
     }
-
+    
 }
