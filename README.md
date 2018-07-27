@@ -23,15 +23,7 @@ If your pool uses Z-NOMP let us know and we will list your website here.
 
 ### Some pools using Z-NOMP or node-stratum-module:
 
-http://mineflowpool.pl Z-nomp based pool. Custom frontend and API.
-
-http://luckpool.org Zcash Pool with Custom Frontend w/Miner's Jackpot
-
-http://zclassic.miningspeed.com Custom frontend and 0% fee
-
-http://miningpool.io/
-
-https://lucky-mining.com.ua/ Running MPOS and no fee, [vot][zcl][zen][hush][btg].lucky-mining.com.ua <-- Ukraine
+http://mnx.szzpool.com
 
 Usage
 =====
