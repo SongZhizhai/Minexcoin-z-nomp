@@ -70,21 +70,29 @@ a good pool operator. For starters be sure to read:
    * https://en.bitcoin.it/wiki/Difficulty
 
 
-#### 1) Downloading & Installing
+#### 1) Downloading & Installing (下载并安装矿池)
 
+这里的内容我根据官方内容改编，优化了一下安装流程，出错率更少。
+I have optimized the installation process. This process is simpler and less error-prone than before
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-sudo apt-get install build-essential libsodium-dev npm
-sudo npm install n -g
-sudo n stable
+sudo -s
+apt-get update
+apt-get install libtool autotools-dev autoconf pkg-config libssl-dev
+apt-get install build-essential libsodium-dev npm
+apt-get install libboost-all-dev git nodejs nodejs-legacy libminiupnpc-dev redis-server
+curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
+source ~/.profile
 git clone https://github.com/joshuayabut/node-open-mining-portal.git z-nomp
 cd z-nomp
+nvm install 8.11.1
+nvm use 8.11.1
 npm update
 npm install
 ```
 
-##### Pool config
+##### Pool config (参数设置)
 Take a look at the example json file inside the `pool_configs` directory. Rename it to `zclassic.json` and change the
 example fields to fit your setup.
 
@@ -112,7 +120,7 @@ Alternatively, you can use a more efficient block notify script written in pure 
 are commented in [scripts/blocknotify.c](scripts/blocknotify.c).
 
 
-#### 3) Start the portal
+#### 3) Start the portal (启动矿池)
 
 ```bash
 npm start
