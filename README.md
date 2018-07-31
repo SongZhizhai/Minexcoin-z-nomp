@@ -91,7 +91,7 @@ Alternatively, you can use a more efficient block notify script written in pure 
 are commented in [scripts/blocknotify.c](scripts/blocknotify.c).
 
 
-#### 3) Start the portal (启动矿池)
+#### 3) Start the portal
 
 ```bash
 npm start
