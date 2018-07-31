@@ -1,4 +1,4 @@
-# z-nomp for minexcoin
+# Z-NOMP for minexcoin
 support ewbf_euqihash_miner_0.4 and lolminer
 
 ### Some pools using Z-NOMP or node-stratum-module:
@@ -44,7 +44,7 @@ a good pool operator. For starters be sure to read:
 #### 1) Downloading & Installing 
 
 using nvm 8.11.1 is better.
-#####I have optimized the installation process. This process is simpler and less error-prone than before
+##### I have optimized the installation process. This process is simpler and less error-prone than before
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
