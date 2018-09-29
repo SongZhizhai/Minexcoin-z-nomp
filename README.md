@@ -55,7 +55,7 @@ apt-get install build-essential libsodium-dev npm
 apt-get install libboost-all-dev git nodejs nodejs-legacy libminiupnpc-dev redis-server
 curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
 source ~/.profile
-git clone https://github.com/joshuayabut/node-open-mining-portal.git z-nomp
+git clone https://github.com/SongZhizhai/Minexcoin-z-nomp.git z-nomp
 cd z-nomp
 nvm install 8.11.1
 nvm use 8.11.1
